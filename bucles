@@ -39,3 +39,32 @@ public class tiempo_actividad {
         }
 
     }
+
+
+
+//Ejercicio 2: Cálculo de salarios semanales
+
+import java.util.Scanner;
+
+public class practica_dos {
+    public static void main(String[] args) {
+        int empleados;
+        double salario = 15.0;
+        double salariosemanal;
+        Scanner lectura = new Scanner(System.in);
+        System.out.println("ingrese la cantidad de empleados ");
+        empleados = lectura.nextInt();
+        for (int i = 1; i <= empleados; i++) {
+            System.out.println("ingrese la cantidad de horas por turno ");
+            int horas = lectura.nextInt();
+
+            salariosemanal = horas * salario;
+            System.out.println("El salario semanal de cada empleado es: $ "+ salariosemanal );
+
+
+        }
+
+
+    }
+}
+
