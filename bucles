@@ -68,3 +68,76 @@ public class practica_dos {
     }
 }
 
+//Ejercicio 3: Control de inventario
+import java.util.Scanner;
+
+public class practica_dos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese el número de productos: ");
+        int numProductos = scanner.nextInt();
+
+        for (int i = 1; i <= numProductos; i++) {
+            System.out.println("Ingrese la cantidad disponible del producto " + i + ": ");
+            int cantidadDisponible = scanner.nextInt();
+
+            if (cantidadDisponible < 5) {
+                System.out.println("Es necesario realizar un pedido para el producto " + i + ", solo hay " + cantidadDisponible + " unidades disponibles.");
+            }
+
+
+        }
+    }
+}
+
+
+
+//Ejercicio 4 : Registro de ventas diarias
+
+import java.util.Scanner;
+
+public class practica_dos {
+    public static void main(String[] args) {
+        Scanner lectura = new Scanner(System.in);
+        int totalVentas = 0;
+        int dia = 1;
+
+        while (dia <= 7) {
+            System.out.println("Ingrese las ventas del día " + dia + ": ");
+            double ventasDiarias = lectura.nextDouble();
+            totalVentas += ventasDiarias;
+            dia++;
+        }
+
+        System.out.println("El total de ventas de la semana es: " + totalVentas);
+    }
+}
+
+// Ejercicio 5: Cálculo de horas extras
+
+import java.util.Scanner;
+
+public class practica_dos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el número de empleados: ");
+        int numEmpleados = scanner.nextInt();
+        int empleado = 1;
+
+        do {
+            System.out.println("Ingrese las horas trabajadas por el empleado " + empleado + ": ");
+            int horasTrabajadas = scanner.nextInt();
+
+            if (horasTrabajadas > 40) {
+                int horasExtras = horasTrabajadas - 40;
+                System.out.println("El empleado " + empleado + " trabajó " + horasExtras + " horas extras.");
+            } else {
+                System.out.println("El empleado " + empleado + " no tiene horas extras.");
+            }
+
+            empleado++;
+        } while (empleado <= numEmpleados);
+
+    }
+}
