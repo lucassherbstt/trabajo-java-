@@ -1,0 +1,41 @@
+//Ejercicio 1: Cálculo del tiempo dedicado a cada actividad
+
+import java.util.Scanner;
+
+public class tiempo_actividad {
+    public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+            int totalEstudiar = 0;
+            int totalEjercicio = 0;
+            int totalLeer = 0;
+            int totalTiempoLibre = 0;
+            int contador = 0;
+
+            while (contador < 1) {
+                System.out.println("Ingrese el tiempo dedicado a estudiar (en horas): ");
+                totalEstudiar += scanner.nextInt();
+
+                System.out.println("Ingrese el tiempo dedicado a hacer ejercicio (en horas): ");
+                totalEjercicio += scanner.nextInt();
+
+                System.out.println("Ingrese el tiempo dedicado a leer (en horas): ");
+                totalLeer += scanner.nextInt();
+
+                System.out.println("Ingrese el tiempo dedicado a tiempo libre (en horas): ");
+                totalTiempoLibre += scanner.nextInt();
+
+                contador++; 
+            }
+
+            int tiempoTotal = totalEstudiar + totalEjercicio + totalLeer + totalTiempoLibre;
+
+            System.out.println("Tiempo total dedicado a estudiar: " + totalEstudiar + " horas");
+            System.out.println("Tiempo total dedicado a hacer ejercicio: " + totalEjercicio + " horas");
+            System.out.println("Tiempo total dedicado a leer: " + totalLeer + " horas");
+            System.out.println("Tiempo total dedicado a tiempo libre: " + totalTiempoLibre + " horas");
+            System.out.println("Tiempo total dedicado a todas las actividades: " + tiempoTotal + " horas");
+
+        }
+
+    }
