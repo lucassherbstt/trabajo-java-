@@ -1,0 +1,28 @@
+//Ejercicio 1: Cálculo de ingresos mensuales
+public class practica_dos {
+    public static void main(String[] args) {
+        int[] ventas = {1000, 1250, 9000, 1100, 1500, 8500, 9500,
+                13026, 14584, 15958, 1159, 1488, 1356, 1400,
+                15822, 12500, 13500, 14600, 14500, 10052, 16000,
+                10405, 15000, 13005, 10025, 10300, 10040, 15000,
+                10405, 10305};
+
+        int ingresosTotales = calcularIngresosMensuales(ventas);
+
+        System.out.println("El total de ingresos mensuales es: $" + ingresosTotales);
+    }
+
+    public static int calcularIngresosMensuales(int[] ventas) {
+        int total = 0;
+
+        for (int i = 0; i < ventas.length; i++) {
+            total += ventas[i];
+        }
+
+        return total;
+    }
+
+}
+
+// Ejercicio 2: Generar reportes de inventario
+
