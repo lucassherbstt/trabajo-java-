@@ -1,0 +1,68 @@
+// Ejercicio 1: numeros perfectos entre el 1 y 1000
+public class practica_dos {
+    public static void main(String[] args) {
+        int i, j, suma;
+        System.out.println("Números perfectos entre 1 y 1000: ");
+        for(i=1;i <= 1000;i++){
+            suma = 0;
+            for(j = 1;j < i;j++){
+                if(i % j==0){
+                    suma = suma + j;
+                }
+            }
+            if(i == suma){
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+
+//2. Leer un número N y calcular el factorial de los números desde 0 hasta N.
+
+import java.util.Scanner;
+
+public class practica_dos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese un número : ");
+        int numero = scanner.nextInt();
+
+        for (int i = 0; i <= numero; i++) {
+            System.out.println("Factorial de " + i + " es: " + calcularFactorial(i));
+        }
+    }
+
+    public static long calcularFactorial(int numero) {
+        long factorial = 1;
+
+        for (int i = 1; i <= numero; i++) {
+            factorial *= i;
+        }
+
+        return factorial;
+
+    }
+}
+
+
+
+
+
+//3. Leer un número N y calcular la suma de los factoriales de los números desde 0 hasta N.
+
+
+
+
+//4. Programa que muestre en lineas separadas lo siguiente: ZYWXVUTSRQPONMLKJIHGFEDCBA, YWXVUTSRQPONMLKJIHGFEDCBA, WXVUTSRQPONMLKJIHGFEDCBA, ...., DCBA, CBA, BA, A.
+
+
+
+
+
+//5. Mostrar un contador de 5 dígitos. En lugar del dígito 3 se debe mostrar E
+
+
+
+//6. Mostrar los números primos desde 2 hasta N
