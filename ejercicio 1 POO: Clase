@@ -1,0 +1,27 @@
+public class Persona {
+    String nombre; // Atributo que identifica el nombre de una persona
+    String apellidos;
+    String numeroDocumentoIdentidad;
+    int anoNacimiento;
+    String paisNacimiento;
+    Character genero;
+
+    public Persona(String nombre, String apellidos, String numeroDocumentoIdentidad, int anoNacimiento, String paisNacimiento, Character genero) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.numeroDocumentoIdentidad = numeroDocumentoIdentidad;
+        this.anoNacimiento = anoNacimiento;
+        this.paisNacimiento = paisNacimiento;
+        this.genero = genero;
+    }
+
+    public void imprimir() {
+        System.out.println("Genero = " + genero);
+        System.out.println("Pais de nacimiento  = " + paisNacimiento);
+        System.out.println("Nombre = " + nombre);
+        System.out.println("Apellidos = " + apellidos);
+        System.out.println("Número de documento de identidad = " + numeroDocumentoIdentidad);
+        System.out.println("Año de nacimiento = " + anoNacimiento);
+        System.out.println();
+    }
+}
